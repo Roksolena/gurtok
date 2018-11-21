@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>CSS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<link href="style2.css" rel="stylesheet" type="text/css" />
+<link href="global.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="top">
+    <h1>Каскадні Таблиці Стилів</h1>
+</div>
+<div id="links">
+    <a href="index.html">Головна<p></p></a>
+    <a href="text.html">Стилі<p></p></a>
+    <a href="text2.html">Текст<p></p></a>
+    <a href="list.html">Списки<p></p></a>
+    <a href="border.html">Границі<p></p></a>
+    <a href="table.html">Таблиці<p></p></a>
+    <a href="link.html">Посилання<p></p></a>
+    <a href="div.html">Блоки</a>
+    <a href="lit.html">Література<p></p></a>
+</div>
+<div id="header">
+    <div id="text">
+	</div>
+	 
+</div>
+<div id="content">
+	<div class="text">
+	  <h1><a>1 </a>Стилі</h1>
+	  <h2><a>1.1 Внутрішня таблиця стилів</a></h2>
+      <p>Стилі для тегів вбудовуються  за допомогою атрибуту <b><i>STYLE</i></b>. Для атрибуту <b><i>STYLE </i></b>у лапках записуємо різні властивості та їхні значення. На рисунку 1.1  відображено запис властивостей та значень.<b> </b><b> </b></p>
+      <p align="center"><img src="images/pic1-1.jpg" alt="запис властивостей" width="50%" /></p>
+      <p align="center">Рис.  1.1 &ndash; Правило запису властивостей та значень</p>
+      <p>Стиль може мати кілька властивостей, у такому  випадку між властивостями ставиться знак <b>; </b>і далі записуємо наступні властивості та їхні значення (рис.&nbsp;1.2). &nbsp;</p>
+      <p><img src="images/pic1-2.jpg" alt="запис властивостей" width="90%" />
+      </p><p align="center">Рис.  1.2 &ndash; Запис кількох властивостей</p>
+      <p><b><img src="images/flag.png" width="59" height="52" />Приклад</b><b> 1.1</b><b>.</b> Виконати форматування абзаців за допомогою стилів з властивостями, які  подано у таблиці 1.1:</p>
+      <p align="right">Таблиця  1.1 &ndash; Приклади форматування </p>
+     <center> <table width="80%" border="1" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="187"><p align="center"><b>Що робити</b></p></td>
+          <td width="313"><p align="center"><b>Приклад тексту</b></p></td>
+        </tr>
+        <tr>
+          <td width="187" valign="top"><p><b>Заголовок    1</b> по центру, гарнітура &ndash; Таhoma, розмір &ndash; 20pt, &nbsp;колір тексту &ndash; червоний, колір фону &ndash; зелений.</p></td>
+          <td width="313" valign="top" bgcolor="#009900"><h1 align="center"><font color="#FF0000">15 фактів про воду</font></h1></td>
+        </tr>
+        <tr>
+          <td width="187" valign="top"><p><b>Абзац</b> має відступ першої стрічки на 20px, вирівнювання по ширині, міжрядковий інтервал 1.5. </p></td>
+          <td width="313" valign="top"><p align="justify" style="line-height: 1.5">Вода &ndash; найпростіша і звична речовина на планеті. Але в    той же час вода таїть в собі безліч загадок. Її досі продовжують досліджувати    вчені. </p></td>
+        </tr>
+      </table></center>
+      <p><a></a><b>Записуємо так:</b><br />
+  &lt;h1 style=&rdquo;text-align: center; font-family: Tahoma;  font-size: 14pt;  color: red;  background-color: green&rdquo;&gt;<b> </b>15 фактів про воду &lt;/h1&gt; <br />
+  &lt;p style=&rdquo;text-indent: 2em; text-align:  justify; line-height:  1.5&rdquo;&gt; Вода -  найпростіша і звична речовина на планеті. Але в той же час вода таїть в собі  безліч загадок. Її досі продовжують досліджувати вчені, знаходячи все більше  цікавих даних про воду.&nbsp;&lt;/p&gt; </p>
+      <p>&nbsp;</p>
+      <h2><a>1.2 Внутрішня таблиця стилів у заголовку</a></h2>
+      <p>У тегах &lt;head&gt; (після &lt;/title&gt; та  перед &lt;/head&gt;)  записати&nbsp; приклад 1.2.<br />
+        <b><img src="images/flag.png" alt="" />Приклад</b><b> 1.2</b><b>.</b> Внутрішня таблиця стилів</p>
+      <p><img src="images/inside_style.jpg" alt="" width="858" height="491" /><br />
+        <center>
+          <img src="images/selector.jpg" alt="" width="725" height="162" />
+        </center>
+      </p>
+      <p align="center">Рис.  1.3 &ndash; Правило запису стиля для селектора</p>
+      <p><img src="images/alert1.png" alt="" width="39" height="59" /><b> Примітка:</b> теги, у яких не записані атрибути <b>style</b> форматуються за вказаними  властивостями у внутрішньому стилі в заголовку сторінки.</p>
+      <p>&nbsp;</p>
+      <h2><a>1.3</a> Класи </h2>
+      <p>Якщо в одному документі  потрібно кілька тегів оформити з різними властивостями, необхідно створити окремий  клас для цього селектора. </p>
+      <p><b><img src="images/flag.png" alt="" /> Приклад  1.3.</b></p>
+      <p align="center"><img src="images/exemp1.3-4.jpg" width="677" height="864"></p>
+      <p><b>Результат:</b></p>
+      <p align="center"><img src="images/exemp1.3-5.jpg" width="673" height="491"></p>
+      <p>&nbsp;</p>
+      <h2><a>1.4</a> Зовнішня таблиця стилів </h2>
+      <p><b>Зовнішня таблиця стилів </b>зберігається в окремому  файлі.</p>
+<p>додати в HTML-заголовок (між тегами <b>&lt;HEAD&gt;</b>) посилання на таблицю стилю, щоб браузер  зміг її знайти</p>
+<p align="center"><b>&lt;LINK </b><b>REL</b><b>=&quot;stylesheet&quot; HREF=&quot;style.сss&quot;  TYPE=&quot;text/css&quot; /&gt;</b></p>
+<p><b>- </b>для атрибуту <i>HREF </i>вказати ім'я файлу таблиці  стилів, </p>
+<p>- атрибути <i>REL=&quot;stylesheet&quot;</i>і <i>TYPE=&quot;text/css&quot; </i>указують на роботу з  таблицями стилів в текстовому документі</p>
+<p><b></b><b><img src="images/flag.png" alt="" />Приклад</b><b> 1.4</b><b>.</b> Особливості написання зовнішньої таблиці стилів</p>
+<p align="center"><img src="images/exemp1.2.jpg" width="664" height="138"></p>
+<p><b><img src="images/flag.png" alt="" />Приклад</b><b> 1.5</b><b>.</b> Особливості написання зовнішньої таблиці стилів</p>
+<p align="center"><img src="images/exemp1.5.jpg" width="665" height="757"></p>
+<p>&nbsp;</p>
+  </div>
+</div>
+
+<div id="footer">
+	<p align=right><i>Косовець Олена Павлівна</i></p>
+</div>
+
+<div id="practica">
+<h1> Практична частина</h1>
+<div class="exampler">
+  <table width="80%" border="0">
+    <tr>
+      <td width="3%"><img src="images/hand.png" width="112" height="96" /></td>
+      <td width="97%"><h2>Самостійно  записати властивості заголовку 2 (<b>h</b><b>2</b>): </h2></td>
+    </tr>
+  </table>
+<ol>
+  <li>вирівнювання по центру;</li>
+  <li>розмір тексту 18pt;</li>
+  <li>колір синій;</li>
+  <li>міжрядковий інтервал 1.5; </li>
+  <li>фоновий колір lime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+  <p align="left">Встановити  для цього тексту:</p>
+  <h2 align="center" style="background-color:#9F9"><font color="blue"> Факт перший:  найчистіша вода у Фінляндії</font></h2>
+  <p>За даними ЮНЕСКО, найчистіша вода  знаходиться у Фінляндії. Усього в дослідженні свіжої природної води брало  участь 122 країни. При цьому 1&nbsp;млрд. людей по всьому світу взагалі не має  доступу до безпечної води.</p>
+<h2 align="center" style="background-color:#9F9"><font color="blue"> Факт другий:  лід швидше отримати з гарячої води</font></h2>
+  <p>Яка вода швидше перетвориться на лід:  гаряча або холодна? Якщо міркувати логічно, то, звичайно, холодна. Адже гарячій  воді потрібно спочатку охолонути, а потім вже замерзнути, а от холодній  остигати не потрібно. Однак досліди показують, що в лід швидше перетворюється  саме гаряча вода. </p>
+ <h2 align="center" style="background-color:#9F9"><font color="blue"> Факт третій:  надохолодження води</font></h2>
+  <p>Всі добре пам'ятають з шкільного курсу  фізики, що вода замерзає при 0 градусів, а при 100 градусах закипає. Однак  існує так зване надохолодження води. Таку властивість має дуже чиста вода - без  домішок. Навіть при охолодженні нижче точки замерзання така вода залишається  рідкою. Але і в тому, і в іншому випадку існують температури, при яких вода  стане льодом або закипить.</p>
+</div>
+</div>
+
+
+</body>
+</html>
